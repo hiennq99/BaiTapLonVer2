@@ -58,8 +58,8 @@ public class SearchTour extends javax.swing.JFrame {
             int width = getWidth();
             int height = getHeight();
             
-            Color color1 = new Color(52,143,80);
-            Color color2 = new Color(86,180,211);
+            Color color1 = new Color(255,255,255);
+            Color color2 = new Color(200,255,255);
             GradientPaint gp = new GradientPaint(0,0,color1,180,height,color2);
             g2d.setPaint(gp);
             g2d.fillRect(0, 0, width, height);
@@ -91,10 +91,13 @@ public class SearchTour extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tìm kiếm Tour");
 
+        cbDiemden.setBackground(new java.awt.Color(204, 255, 255));
         cbDiemden.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+        cbKhoihanh.setBackground(new java.awt.Color(204, 255, 255));
         cbKhoihanh.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+        btnXacnhan.setBackground(new java.awt.Color(204, 255, 255));
         btnXacnhan.setText("Tìm Tour");
         btnXacnhan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,6 +105,7 @@ public class SearchTour extends javax.swing.JFrame {
             }
         });
 
+        btnHuy.setBackground(new java.awt.Color(204, 255, 255));
         btnHuy.setText("Hủy");
         btnHuy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,6 +113,7 @@ public class SearchTour extends javax.swing.JFrame {
             }
         });
 
+        btnTrongnuoc.setBackground(new java.awt.Color(204, 255, 255));
         btnTrongnuoc.setText("Du Lịch Trong Nước");
         btnTrongnuoc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,6 +121,7 @@ public class SearchTour extends javax.swing.JFrame {
             }
         });
 
+        btnNuocngoai.setBackground(new java.awt.Color(204, 255, 255));
         btnNuocngoai.setText("Du Lịch Nước Ngoài");
         btnNuocngoai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

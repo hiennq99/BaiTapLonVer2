@@ -50,8 +50,8 @@ public class DSTour extends javax.swing.JFrame {
             int width = getWidth();
             int height = getHeight();
 
-            Color color1 = new Color(52, 143, 80);
-            Color color2 = new Color(86, 180, 211);
+            Color color1 = new Color(255,255,255);
+            Color color2 = new Color(200,255,255);
             GradientPaint gp = new GradientPaint(0, 0, color1, 180, height, color2);
             g2d.setPaint(gp);
             g2d.fillRect(0, 0, width, height);
@@ -112,6 +112,7 @@ public class DSTour extends javax.swing.JFrame {
         lbtour2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lbtour2.setText("Tour 2");
 
+        btnHuy.setBackground(new java.awt.Color(204, 255, 255));
         btnHuy.setText("Hủy");
         btnHuy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,6 +125,7 @@ public class DSTour extends javax.swing.JFrame {
 
         lbGioiThieu.setText(".");
 
+        btnXemChiTiet.setBackground(new java.awt.Color(204, 255, 255));
         btnXemChiTiet.setText("Xem chi tiết tour");
         btnXemChiTiet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,6 +162,7 @@ public class DSTour extends javax.swing.JFrame {
         lbDD1.setFont(new java.awt.Font("Tahoma", 2, 9)); // NOI18N
         lbDD1.setText("jLabel5");
 
+        btnDat.setBackground(new java.awt.Color(204, 255, 255));
         btnDat.setText("Đặt");
         btnDat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

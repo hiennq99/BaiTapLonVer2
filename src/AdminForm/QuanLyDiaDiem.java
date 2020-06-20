@@ -94,6 +94,7 @@ public class QuanLyDiaDiem extends javax.swing.JFrame {
 
         jLabel4.setText("Tên địa điểm");
 
+        btnThem.setBackground(new java.awt.Color(204, 255, 255));
         btnThem.setText("Thêm");
         btnThem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,7 +102,6 @@ public class QuanLyDiaDiem extends javax.swing.JFrame {
             }
         });
 
-        tbQuanLyDiaDiem.setBackground(new java.awt.Color(204, 255, 255));
         tbQuanLyDiaDiem.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -120,6 +120,7 @@ public class QuanLyDiaDiem extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tbQuanLyDiaDiem);
 
+        btnSua.setBackground(new java.awt.Color(204, 255, 255));
         btnSua.setText("Sửa");
         btnSua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,6 +128,7 @@ public class QuanLyDiaDiem extends javax.swing.JFrame {
             }
         });
 
+        btnXoa.setBackground(new java.awt.Color(204, 255, 255));
         btnXoa.setText("Xóa");
         btnXoa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,6 +136,7 @@ public class QuanLyDiaDiem extends javax.swing.JFrame {
             }
         });
 
+        btnThoai.setBackground(new java.awt.Color(204, 255, 255));
         btnThoai.setText("Thoát");
         btnThoai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

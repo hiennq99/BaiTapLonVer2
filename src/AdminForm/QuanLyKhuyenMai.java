@@ -95,7 +95,7 @@ public class QuanLyKhuyenMai extends javax.swing.JFrame {
 
         jLabel3.setText("Ngày Bắt Đầu");
 
-        btnThem.setBackground(new java.awt.Color(0, 153, 153));
+        btnThem.setBackground(new java.awt.Color(204, 255, 255));
         btnThem.setText("Thêm");
         btnThem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,7 +105,7 @@ public class QuanLyKhuyenMai extends javax.swing.JFrame {
 
         jLabel4.setText("Tên Khuyến Mại");
 
-        btnSua.setBackground(new java.awt.Color(0, 153, 153));
+        btnSua.setBackground(new java.awt.Color(204, 255, 255));
         btnSua.setText("Sửa");
         btnSua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,7 +115,7 @@ public class QuanLyKhuyenMai extends javax.swing.JFrame {
 
         jLabel5.setText("Ngày Kết Thúc");
 
-        btnXoa.setBackground(new java.awt.Color(0, 153, 153));
+        btnXoa.setBackground(new java.awt.Color(204, 255, 255));
         btnXoa.setText("Xóa");
         btnXoa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,7 +125,7 @@ public class QuanLyKhuyenMai extends javax.swing.JFrame {
 
         jLabel6.setText("Giá Trị Khuyến Mại");
 
-        btnThoat.setBackground(new java.awt.Color(0, 153, 153));
+        btnThoat.setBackground(new java.awt.Color(204, 255, 255));
         btnThoat.setText("Thoát");
         btnThoat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,7 +133,7 @@ public class QuanLyKhuyenMai extends javax.swing.JFrame {
             }
         });
 
-        btnClear.setBackground(new java.awt.Color(0, 153, 153));
+        btnClear.setBackground(new java.awt.Color(204, 255, 255));
         btnClear.setText("Clear");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,7 +144,6 @@ public class QuanLyKhuyenMai extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("Quản Lý Khuyến Mại");
 
-        tbQuanLyKhuyenMai.setBackground(new java.awt.Color(204, 255, 255));
         tbQuanLyKhuyenMai.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},

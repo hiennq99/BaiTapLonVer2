@@ -48,8 +48,8 @@ public class DangKyTour extends javax.swing.JFrame {
             int width = getWidth();
             int height = getHeight();
 
-            Color color1 = new Color(52, 143, 80);
-            Color color2 = new Color(86, 180, 211);
+            Color color1 = new Color(255,255,255);
+            Color color2 = new Color(200,255,255);
             GradientPaint gp = new GradientPaint(0, 0, color1, 180, height, color2);
             g2d.setPaint(gp);
             g2d.fillRect(0, 0, width, height);
@@ -106,6 +106,7 @@ public class DangKyTour extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("Đăng ký tour");
 
+        btnDangky.setBackground(new java.awt.Color(204, 255, 255));
         btnDangky.setText("Đăng ký");
         btnDangky.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,6 +117,7 @@ public class DangKyTour extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("Họ Tên");
 
+        btnHuybo.setBackground(new java.awt.Color(204, 255, 255));
         btnHuybo.setText("Hủy bỏ");
         btnHuybo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,9 +179,9 @@ public class DangKyTour extends javax.swing.JFrame {
                                 .addComponent(txtHoten)))))
                 .addContainerGap(18, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(199, Short.MAX_VALUE)
+                .addGap(146, 146, 146)
                 .addComponent(btnDangky, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(183, 183, 183)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 236, Short.MAX_VALUE)
                 .addComponent(btnHuybo, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(93, 93, 93))
         );

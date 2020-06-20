@@ -43,8 +43,8 @@ public class QuanLyUser extends javax.swing.JFrame {
             int width = getWidth();
             int height = getHeight();
             
-            Color color1 = new Color(52,143,80);
-            Color color2 = new Color(86,180,211);
+            Color color1 = new Color(255,255,255);
+            Color color2 = new Color(200,255,255);
             GradientPaint gp = new GradientPaint(0,0,color1,180,height,color2);
             g2d.setPaint(gp);
             g2d.fillRect(0, 0, width, height);
@@ -116,6 +116,7 @@ public class QuanLyUser extends javax.swing.JFrame {
 
         jLabel2.setText("Mã khách hàng");
 
+        btnSua.setBackground(new java.awt.Color(204, 255, 255));
         btnSua.setText("Sửa");
         btnSua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,6 +126,7 @@ public class QuanLyUser extends javax.swing.JFrame {
 
         jLabel3.setText("Họ tên");
 
+        btnXoa.setBackground(new java.awt.Color(204, 255, 255));
         btnXoa.setText("Xóa");
         btnXoa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -132,6 +134,7 @@ public class QuanLyUser extends javax.swing.JFrame {
             }
         });
 
+        btnThoai.setBackground(new java.awt.Color(204, 255, 255));
         btnThoai.setText("Thoát");
         btnThoai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,6 +148,7 @@ public class QuanLyUser extends javax.swing.JFrame {
 
         jLabel5.setText("Email");
 
+        btnThem.setBackground(new java.awt.Color(204, 255, 255));
         btnThem.setText("Thêm");
         btnThem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

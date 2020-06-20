@@ -30,8 +30,8 @@ public class ChiTietTour extends javax.swing.JFrame {
             int width = getWidth();
             int height = getHeight();
 
-            Color color1 = new Color(52, 143, 80);
-            Color color2 = new Color(86, 180, 211);
+            Color color1 = new Color(255,255,255);
+            Color color2 = new Color(200,255,255);
             GradientPaint gp = new GradientPaint(0, 0, color1, 180, height, color2);
             g2d.setPaint(gp);
             g2d.fillRect(0, 0, width, height);
@@ -88,6 +88,7 @@ public class ChiTietTour extends javax.swing.JFrame {
         lbDichVu.setRows(5);
         jScrollPane3.setViewportView(lbDichVu);
 
+        jButton1.setBackground(new java.awt.Color(204, 255, 255));
         jButton1.setText("Đóng");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
