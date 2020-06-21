@@ -47,7 +47,6 @@ public class MenuQuanLy extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new jPanelGradient();
-        btnQuanLyVe = new javax.swing.JButton();
         btnQuanLyTour = new javax.swing.JButton();
         btnQuanlykhuyenmai = new javax.swing.JButton();
         btnThongke = new javax.swing.JButton();
@@ -58,15 +57,6 @@ public class MenuQuanLy extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu Quản Lý");
-
-        btnQuanLyVe.setBackground(new java.awt.Color(0, 153, 153));
-        btnQuanLyVe.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnQuanLyVe.setText("Quản lý vé");
-        btnQuanLyVe.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnQuanLyVeActionPerformed(evt);
-            }
-        });
 
         btnQuanLyTour.setBackground(new java.awt.Color(0, 153, 153));
         btnQuanLyTour.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -89,6 +79,11 @@ public class MenuQuanLy extends javax.swing.JFrame {
         btnThongke.setBackground(new java.awt.Color(0, 153, 153));
         btnThongke.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnThongke.setText("Thống kê");
+        btnThongke.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnThongkeActionPerformed(evt);
+            }
+        });
 
         btnThat.setBackground(new java.awt.Color(0, 153, 153));
         btnThat.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -129,17 +124,16 @@ public class MenuQuanLy extends javax.swing.JFrame {
                 .addGap(91, 91, 91)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnQuanLyVe, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 167, Short.MAX_VALUE)
-                        .addComponent(btnQuanLyTour, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnQuanLyUser, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnQuanLyDD))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnQuanlykhuyenmai)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnThongke, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(btnThongke, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnQuanLyUser, javax.swing.GroupLayout.DEFAULT_SIZE, 191, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 167, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnQuanLyDD, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnQuanLyTour, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(115, 115, 115))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,14 +154,15 @@ public class MenuQuanLy extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnQuanLyDD)
                     .addComponent(btnQuanLyUser))
-                .addGap(73, 73, 73)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnQuanLyTour)
-                    .addComponent(btnQuanLyVe))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(73, 73, 73)
+                        .addComponent(btnQuanLyTour))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(btnThongke, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(68, 68, 68)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnThongke, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnQuanlykhuyenmai, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnQuanlykhuyenmai, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addComponent(btnThat, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(56, 56, 56))
@@ -202,13 +197,6 @@ public class MenuQuanLy extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnQuanLyDDActionPerformed
 
-    private void btnQuanLyVeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanLyVeActionPerformed
-        // TODO add your handling code here:
-        QuanLyVe a = new QuanLyVe();
-        a.show();
-        this.dispose();
-    }//GEN-LAST:event_btnQuanLyVeActionPerformed
-
     private void btnQuanLyTourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanLyTourActionPerformed
         // TODO add your handling code here:
         QuanLyTour a = new QuanLyTour();
@@ -227,6 +215,13 @@ public class MenuQuanLy extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_btnThatActionPerformed
+
+    private void btnThongkeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThongkeActionPerformed
+        // TODO add your handling code here:
+        QuanLyVe ve = new QuanLyVe();
+        ve.show();
+        this.dispose();
+    }//GEN-LAST:event_btnThongkeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -268,7 +263,6 @@ public class MenuQuanLy extends javax.swing.JFrame {
     private javax.swing.JButton btnQuanLyDD;
     private javax.swing.JButton btnQuanLyTour;
     private javax.swing.JButton btnQuanLyUser;
-    private javax.swing.JButton btnQuanLyVe;
     private javax.swing.JButton btnQuanlykhuyenmai;
     private javax.swing.JButton btnThat;
     private javax.swing.JButton btnThongke;
